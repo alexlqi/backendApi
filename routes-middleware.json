@@ -1,0 +1,14 @@
+{
+    "/":{
+        "middlewares": ["checkIpMiddleware"],
+        "router": "home.js"
+    },
+    "/users": {
+        "middlewares": ["authMiddleware"],
+        "router": "users.js"
+    },
+    "/products": {
+        "middlewares": ["authMiddleware", "adminMiddleware"],
+        "router": "products.js"
+    }
+}
